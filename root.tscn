@@ -1,33 +1,47 @@
-[gd_scene load_steps=5 format=3 uid="uid://ije4hijln0jx"]
+[gd_scene load_steps=4 format=3 uid="uid://ije4hijln0jx"]
 
-[ext_resource type="Script" uid="uid://djq2dm6iybnyk" path="res://root.gd" id="1_pq8q7"]
-[ext_resource type="Texture2D" uid="uid://di7x2mdklwfls" path="res://assets/fonts.png" id="2_pyidc"]
-[ext_resource type="Script" uid="uid://ddkcm2potu3tb" path="res://bf.gd" id="2_vvh5c"]
+[ext_resource type="FontFile" uid="uid://binmr6jb7aipd" path="res://CubicFive.tres" id="1_pq8q7"]
+[ext_resource type="FontFile" uid="uid://batrr8xwcylq8" path="res://SquareDance.tres" id="2_pyidc"]
 
-[sub_resource type="FontFile" id="FontFile_28aoi"]
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/10/0/ascent = 0.0
-cache/0/10/0/descent = 0.0
-cache/0/10/0/underline_position = 0.0
-cache/0/10/0/underline_thickness = 0.0
-cache/0/10/0/scale = 1.0
-script = ExtResource("2_vvh5c")
-texture = ExtResource("2_pyidc")
-line_height = 17
-metadata/_custom_type_script = "uid://ddkcm2potu3tb"
+[sub_resource type="GDScript" id="GDScript_pyidc"]
+script/source = "extends Node2D
+
+#const BITMAP_FONT = preload(\"res://BitmapFont.tscn\")
+
+func _ready() -> void:
+	pass
+	#var font = BITMAP_FONT.instantiate()
+	#font.set_texture(preload(\"res://assets/fonts.png\"), 17)
+	#font.add_glyphs(\"ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789&#<!>.\", 3, 3, 17, 17)
+	#font.add_glyphs(\"abcdefghijklmnopqrstuvwxyz\", 3, 3, 17, 17)
+	#
+	#$Label.set(\"theme_override_fonts/font\", font.font)
+	#$Label.set(\"theme_override_font_sizes/font_size\", font.size)
+"
 
 [node name="Root" type="Node2D"]
-script = ExtResource("1_pq8q7")
+script = SubResource("GDScript_pyidc")
 
-[node name="Label" type="Label" parent="."]
+[node name="FixedWidth" type="Label" parent="."]
+texture_filter = 1
 offset_left = 20.0
 offset_top = 20.0
 offset_right = 111.0
 offset_bottom = 43.0
-theme_override_fonts/font = SubResource("FontFile_28aoi")
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_pq8q7")
 theme_override_font_sizes/font_size = 10
-text = "Hello World"
+text = "Cubic Five - Fixed Width Font"
+
+[node name="VariableWidth" type="Label" parent="."]
+texture_filter = 1
+offset_left = 18.0
+offset_top = 73.0
+offset_right = 176.0
+offset_bottom = 96.25
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_pyidc")
+theme_override_font_sizes/font_size = 10
+text = "square dance - variable width font"

@@ -1,0 +1,39 @@
+[gd_resource type="FontFile" script_class="BitmapFont" load_steps=6 format=3 uid="uid://binmr6jb7aipd"]
+
+[ext_resource type="Script" uid="uid://bpkuofdsnbtdq" path="res://CharacterBlock.gd" id="1_7ru12"]
+[ext_resource type="Script" uid="uid://ddkcm2potu3tb" path="res://BitmapFont.gd" id="2_dr2o3"]
+[ext_resource type="Texture2D" uid="uid://c6fres1ohigda" path="res://images/cubic_five.png" id="3_dr2o3"]
+
+[sub_resource type="Resource" id="Resource_g8mxo"]
+script = ExtResource("1_7ru12")
+characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+offset_x = 1
+offset_y = 1
+character_width = 6
+character_height = 5
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[sub_resource type="Resource" id="Resource_dr2o3"]
+script = ExtResource("1_7ru12")
+characters = "abcdefghijklmnopqrstuvwxyz"
+offset_x = 1
+offset_y = 1
+character_width = 6
+character_height = 5
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[resource]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+script = ExtResource("2_dr2o3")
+texture = ExtResource("3_dr2o3")
+character_blocks = Array[ExtResource("1_7ru12")]([SubResource("Resource_g8mxo"), SubResource("Resource_dr2o3")])
+metadata/_custom_type_script = "uid://ddkcm2potu3tb"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di7x2mdklwfls"
-path="res://.godot/imported/fonts.png-f85ffe861c8bc488e9b90b704f0f0e03.ctex"
+uid="uid://c6fres1ohigda"
+path="res://.godot/imported/cubic_five.png-7a2b289827e138b8c0caa005989212d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts.png"
-dest_files=["res://.godot/imported/fonts.png-f85ffe861c8bc488e9b90b704f0f0e03.ctex"]
+source_file="res://images/cubic_five.png"
+dest_files=["res://.godot/imported/cubic_five.png-7a2b289827e138b8c0caa005989212d3.ctex"]
 
 [params]
 

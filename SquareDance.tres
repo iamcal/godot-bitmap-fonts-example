@@ -1,0 +1,54 @@
+[gd_resource type="FontFile" script_class="BitmapFont" load_steps=8 format=3 uid="uid://batrr8xwcylq8"]
+
+[ext_resource type="Script" uid="uid://bpkuofdsnbtdq" path="res://CharacterBlock.gd" id="1_52qdm"]
+[ext_resource type="Script" uid="uid://ddkcm2potu3tb" path="res://BitmapFont.gd" id="2_e23xv"]
+[ext_resource type="Texture2D" uid="uid://q2vedg6qoo6n" path="res://images/square_dance.png" id="3_e23xv"]
+
+[sub_resource type="Resource" id="Resource_x8jf6"]
+script = ExtResource("1_52qdm")
+characters = "abcdeghkmnopqsuvwxyz "
+character_width = 6
+character_height = 9
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[sub_resource type="Resource" id="Resource_ntrqj"]
+script = ExtResource("1_52qdm")
+characters = "fjlrt"
+offset_y = 10
+character_width = 3
+character_height = 9
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[sub_resource type="Resource" id="Resource_krk8v"]
+script = ExtResource("1_52qdm")
+characters = "i"
+offset_x = 19
+offset_y = 10
+character_width = 2
+character_height = 9
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[sub_resource type="Resource" id="Resource_e23xv"]
+script = ExtResource("1_52qdm")
+characters = "-"
+offset_x = 21
+offset_y = 10
+character_width = 4
+character_height = 9
+metadata/_custom_type_script = "uid://bpkuofdsnbtdq"
+
+[resource]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+script = ExtResource("2_e23xv")
+texture = ExtResource("3_e23xv")
+character_blocks = Array[ExtResource("1_52qdm")]([SubResource("Resource_x8jf6"), SubResource("Resource_ntrqj"), SubResource("Resource_krk8v"), SubResource("Resource_e23xv")])
+metadata/_custom_type_script = "uid://ddkcm2potu3tb"
