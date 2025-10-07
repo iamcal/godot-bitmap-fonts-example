@@ -1,7 +1,7 @@
 [gd_resource type="FontFile" script_class="BitmapFont" load_steps=6 format=3 uid="uid://binmr6jb7aipd"]
 
-[ext_resource type="Script" uid="uid://bpkuofdsnbtdq" path="res://CharacterBlock.gd" id="1_7ru12"]
-[ext_resource type="Script" uid="uid://ddkcm2potu3tb" path="res://BitmapFont.gd" id="2_dr2o3"]
+[ext_resource type="Script" uid="uid://bpkuofdsnbtdq" path="res://addons/bitmap_fonts/CharacterBlock.gd" id="1_7ru12"]
+[ext_resource type="Script" uid="uid://ddkcm2potu3tb" path="res://addons/bitmap_fonts/BitmapFont.gd" id="2_dr2o3"]
 [ext_resource type="Texture2D" uid="uid://c6fres1ohigda" path="res://images/cubic_five.png" id="3_dr2o3"]
 
 [sub_resource type="Resource" id="Resource_g8mxo"]
