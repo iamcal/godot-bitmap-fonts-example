@@ -1,4 +1,5 @@
 @tool
+## A Font based on a bitmap image.
 extends FontFile
 class_name BitmapFont
 
