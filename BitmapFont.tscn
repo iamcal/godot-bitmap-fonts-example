@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://din7djbrnbx42"]
+
+[ext_resource type="Script" uid="uid://dlmcg8ruoy80r" path="res://BitmapFont.gd" id="1_tlaub"]
+
+[node name="BitmapFont" type="Node"]
+script = ExtResource("1_tlaub")
