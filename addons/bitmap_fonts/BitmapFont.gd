@@ -1,3 +1,4 @@
+@tool
 extends FontFile
 class_name BitmapFont
 
@@ -32,6 +33,10 @@ var _texture_index = 0
 var _size = Vector2i(_fixed_size, 0)
 
 func _update_texture():
+	clear_cache()
+	
+	if not texture: return
+	
 	var image = texture.get_image()
 	
 	# find max height of characters
