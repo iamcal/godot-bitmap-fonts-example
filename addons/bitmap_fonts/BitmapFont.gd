@@ -27,7 +27,7 @@ class_name BitmapFont
 		_update_texture()
 
 
-var _fixed_size = 10
+var _fixed_size = 16 # the godot default
 var _cache_index = 0
 var _texture_index = 0
 var _size = Vector2i(_fixed_size, 0)

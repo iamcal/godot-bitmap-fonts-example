@@ -21,11 +21,9 @@ func _ready() -> void:
 
 [sub_resource type="LabelSettings" id="LabelSettings_pyidc"]
 font = ExtResource("1_pq8q7")
-font_size = 10
 
 [sub_resource type="LabelSettings" id="LabelSettings_vvh5c"]
 font = ExtResource("2_pyidc")
-font_size = 10
 
 [node name="Root" type="Node2D"]
 script = SubResource("GDScript_pyidc")
