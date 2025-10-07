@@ -22,17 +22,21 @@ func update_texture():
 	set_cache_ascent(_cache_index, _size.x, line_height)
 	set_cache_descent(_cache_index, _size.x, 0)
 	#update_glyphs()
+	
+	add_glyphs("ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789&#<!>.", 3, 3, 17, 17)
+	add_glyphs("abcdefghijklmnopqrstuvwxyz", 3, 3, 17, 17)
 
-#func add_glyphs(characters: String, offset_x: int, offset_y: int, width: int, height: int):
-#
-	#for i in range (0, characters.length()):
-#
-		#var glyph = characters.to_ascii_buffer()[i]
-		#var advance = width
-		#var rect = Rect2(offset_x+(i*width), offset_y, width, height)
-		#
-		#font.set_glyph_uv_rect(_cache_index, _size, glyph, rect)
-		#font.set_glyph_texture_idx(_cache_index, _size, glyph, _texture_index)
-		#font.set_glyph_offset(_cache_index, _size, glyph, Vector2(0, -height))
-		#font.set_glyph_size(_cache_index, _size, glyph, rect.size)
-		#font.set_glyph_advance(_cache_index, _size.x, glyph, Vector2(advance, 0))
+
+func add_glyphs(characters: String, offset_x: int, offset_y: int, width: int, height: int):
+
+	for i in range (0, characters.length()):
+
+		var glyph = characters.to_ascii_buffer()[i]
+		var advance = width
+		var rect = Rect2(offset_x+(i*width), offset_y, width, height)
+		
+		set_glyph_uv_rect(_cache_index, _size, glyph, rect)
+		set_glyph_texture_idx(_cache_index, _size, glyph, _texture_index)
+		set_glyph_offset(_cache_index, _size, glyph, Vector2(0, -height))
+		set_glyph_size(_cache_index, _size, glyph, rect.size)
+		set_glyph_advance(_cache_index, _size.x, glyph, Vector2(advance, 0))
